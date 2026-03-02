@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="../Css/estilo.css">
+    <link rel="stylesheet" href="../Css/2.css">
+    
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <div class="content">
+        <h1>Tabla periódica Interactuable</h1>
+        <p>Maestra:leslie</p>
+        <p style="font-size: 0.9rem; margin-top: 2rem;">Es de ahuevo usar el modo sobre escritorio en Android si lo quieres con mayor comodidad</p>
+        
+    </div>
+    <br>
+    <hr>
+   
+    <div class="container">
+        
+    <button class="btnf" id="btn-f">Colorear por categoría</button>
+    
+    <h2>grupos</h2>
+    <div class="Grupos">
+        <div class="uz">
+            <span class="let">1</span>
+        </div>
+        
+         <div id="overlay" class="overlay">
+  <div class="modal">
+    <button class="close" id="closeModal">✕</button>
+
+    <!-- Encabezado -->
+    <div class="modal-header">
+      <div class="symbol" id="s"></div>
+      <div>
+        <h2 id="name">Hidrógeno</h2>
+        <span class="category">información</span>
+      </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="modal-content">
+      <div class="info">
+        <span>Número atómico</span>
+        <strong id="No">1</strong>
+      </div>
+      <div class="info">
+        <span>Masa atómica</span>
+        <strong id="Ma">1.008</strong>
+      </div>
+      <div class="info">
+        <span>Estado</span>
+        <strong id="Es">Gas</strong>
+      </div>
+      <div class="info">
+        <span>Grupo</span>
+        <strong id="Gru">1</strong>
+      </div>
+    </div>
+
+    <!-- Descripción -->
+    <p id="des">
+      El hidrógeno es el elemento químico más ligero y abundante del universo.
+    </p>
+  </div>
+</div>
+         
+      
+    </div>
+    <div class="tabla">
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">H</span>
+            <span class="numero">1</span>
+        </div>
+         <div class="uz">
+             <span class="let">2</span>
+         </div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="element" style="visibility: hidden;"></div>
+         <div class="uz">
+             <span class="let">13</span>
+         </div>
+         <div class="uz">
+             <span class="let">14</span>
+         </div>
+         <div class="uz">
+             <span class="let">15</span>
+         </div>
+         <div class="uz">
+             <span class="let">16</span>
+         </div>
+         <div class="uz">
+             <span class="let">17</span>
+         </div>
+          <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">He</span>
+            <span class="numero">2</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">Li</span>
+            <span class="numero">3</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Be</span>
+            <span class="numero">5</span>
+        </div>
+        <div class="uz">
+             <span class="let">3</span>
+         </div>
+        <div class="uz">
+             <span class="let">4</span>
+         </div>
+         <div class="uz">
+             <span class="let">5</span>
+         </div>
+         <div class="uz">
+             <span class="let">6</span>
+         </div>
+         <div class="uz">
+             <span class="let">7</span>
+         </div>
+         <div class="uz">
+             <span class="let">8</span>
+         </div>
+         <div class="uz">
+             <span class="let">9</span>
+         </div>
+         <div class="uz">
+             <span class="let">10</span>
+         </div>
+         <div class="uz">
+             <span class="let">11</span>
+         </div>
+         <div class="uz">
+             <span class="let">12</span>
+         </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">B</span>
+            <span class="numero">5</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">C</span>
+            <span class="numero">6</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">N</span>
+            <span class="numero">7</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">O</span>
+            <span class="numero">8</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">F</span>
+            <span class="numero">9</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Ne</span>
+            <span class="numero">10</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">Na</span>
+            <span class="numero">11</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Mg</span>
+            <span class="numero">12</span>
+        </div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Al</span>
+            <span class="numero">13</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">Si</span>
+            <span class="numero">14</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">P</span>
+            <span class="numero">15</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">S</span>
+            <span class="numero">16</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">Cl</span>
+            <span class="numero">17</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Ar</span>
+            <span class="numero">18</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">K</span>
+            <span class="numero">19</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Ca</span>
+            <span class="numero">20</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Sc</span>
+            <span class="numero">21</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ti</span>
+            <span class="numero">22</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">V</span>
+            <span class="numero">23</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Cr</span>
+            <span class="numero">24</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Mn</span>
+            <span class="numero">25</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Fe</span>
+            <span class="numero">26</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Co</span>
+            <span class="numero">27</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ni</span>
+            <span class="numero">28</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Cu</span>
+            <span class="numero">29</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Zn</span>
+            <span class="numero">30</span>
+        </div><div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Ga</span>
+            <span class="numero">31</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">Ge</span>
+            <span class="numero">32</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">As</span>
+            <span class="numero">33</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="1">
+            <span class="simbolo">Se</span>
+            <span class="numero">34</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">Br</span>
+            <span class="numero">35</span>
+        </div><div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Kr</span>
+            <span class="numero">36</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">Rb</span>
+            <span class="numero">37</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Sr</span>
+            <span class="numero">38</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Y</span>
+            <span class="numero">39</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Zr</span>
+            <span class="numero">40</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Nb</span>
+            <span class="numero">41</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Mo</span>
+            <span class="numero">42</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Tc</span>
+            <span class="numero">43</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ru</span>
+            <span class="numero">44</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Rh</span>
+            <span class="numero">45</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Pd</span>
+            <span class="numero">46</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ag</span>
+            <span class="numero">47</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Cd</span>
+            <span class="numero">48</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">In</span>
+            <span class="numero">49</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Sn</span>
+            <span class="numero">50</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">Sb</span>
+            <span class="numero">51</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">Te</span>
+            <span class="numero">52</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">I</span>
+            <span class="numero">53</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Xe</span>
+            <span class="numero">54</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">Cs</span>
+            <span class="numero">55</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Ba</span>
+            <span class="numero">56</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Lu</span>
+            <span class="numero">71</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Hf</span>
+            <span class="numero">72</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ta</span>
+            <span class="numero">73</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">W</span>
+            <span class="numero">74</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Re</span>
+            <span class="numero">75</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Os</span>
+            <span class="numero">76</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ir</span>
+            <span class="numero">77</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Pt</span>
+            <span class="numero">78</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Au</span>
+            <span class="numero">79</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Hg</span>
+            <span class="numero">80</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Ti</span>
+            <span class="numero">81</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Pb</span>
+            <span class="numero">82</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Bi</span>
+            <span class="numero">83</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="6">
+            <span class="simbolo">Po</span>
+            <span class="numero">84</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">At</span>
+            <span class="numero">85</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Rn</span>
+            <span class="numero">86</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="2">
+            <span class="simbolo">Fr</span>
+            <span class="numero">87</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="3">
+            <span class="simbolo">Ra</span>
+            <span class="numero">88</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Lr</span>
+            <span class="numero">103</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Rf</span>
+            <span class="numero">104</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Db</span>
+            <span class="numero">105</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Sg</span>
+            <span class="numero">106</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Bh</span>
+            <span class="numero">107</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Hs</span>
+            <span class="numero">108</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Mt</span>
+            <span class="numero">109</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Ds</span>
+            <span class="numero">110</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Rg</span>
+            <span class="numero">111</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="4">
+            <span class="simbolo">Cn</span>
+            <span class="numero">112</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Nh</span>
+            <span class="numero">113</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Fl</span>
+            <span class="numero">114</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Mc</span>
+            <span class="numero">115</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="5">
+            <span class="simbolo">Lv</span>
+            <span class="numero">116</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="7">
+            <span class="simbolo">Ts</span>
+            <span class="numero">117</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="8">
+            <span class="simbolo">Og</span>
+            <span class="numero">118</span>
+        </div>
+       
+        
+    </div>
+    <br>
+    <div class="tabla-2">
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">La</span>
+            <span class="numero">57</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Ce</span>
+            <span class="numero">58</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Pr</span>
+            <span class="numero">59</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Nd</span>
+            <span class="numero">60</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Pm</span>
+            <span class="numero">61</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Sm</span>
+            <span class="numero">62</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Eu</span>
+            <span class="numero">63</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Gd</span>
+            <span class="numero">64</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Tb</span>
+            <span class="numero">65</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Dy</span>
+            <span class="numero">66</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Ho</span>
+            <span class="numero">67</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Er</span>
+            <span class="numero">68</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Tm</span>
+            <span class="numero">69</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="9">
+            <span class="simbolo">Yb</span>
+            <span class="numero">70</span>
+        </div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="element" style="visibility: hidden;"></div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Ac</span>
+            <span class="numero">89</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Th</span>
+            <span class="numero">90</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Pa</span>
+            <span class="numero">91</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">U</span>
+            <span class="numero">92</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Np</span>
+            <span class="numero">93</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Pu</span>
+            <span class="numero">94</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Am</span>
+            <span class="numero">95</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Cm</span>
+            <span class="numero">96</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Bk</span>
+            <span class="numero">97</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Cf</span>
+            <span class="numero">98</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Es</span>
+            <span class="numero">99</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Fm</span>
+            <span class="numero">100</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">Md</span>
+            <span class="numero">101</span>
+        </div>
+        <div class="elemento" onclick="usd(this)" data-group="10">
+            <span class="simbolo">No</span>
+            <span class="numero">102</span>
+        </div>
+    </div>
+    </div>
+    <script src="../Js/2.js"></script>
+    <script src="../Js/1.js"></script>
+</body>
+</html>
