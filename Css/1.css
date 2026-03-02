@@ -1,0 +1,36 @@
+body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Detrás del contenido */
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Fondo de respaldo */
+        }
+        .content {
+           
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+            z-index: 1;
+            pointer-events: none; /* Permite que el mouse interactúe con el canvas a través del texto */
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+/*internaciones de la tabla*/

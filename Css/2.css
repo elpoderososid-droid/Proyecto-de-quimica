@@ -1,0 +1,222 @@
+.elemento{
+ background: rgba(30, 40, 60, 0.9);
+ border-radius: 10px;
+ padding: 10px , 5px;
+ text-align: center;
+ color: white;
+ font-weight: bold;
+ cursor: pointer;
+ transition: transform 0.2s, box-shadow 0.2s;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.elemento:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px cyan;
+}
+.simbolo{
+    font-size: 1.5rem;
+    display: block;
+    
+    
+}
+.numero{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap:5px;
+    max-width: 1200px;
+    margin:0 auto;
+    
+}
+.tabla-2{
+       display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap:5px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.btnf {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btnf:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    border-color: cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+
+
+/* Color neutro por defecto (cuando no hay filtro) */
+.elemento {
+    background: rgba(30, 40, 60, 0.8); /* Color base */
+}
+
+/* Cuando el contenedor tiene la clase "show-groups", se activan los colores por grupo */
+.show-groups .elemento[data-group="1"] {
+    background: palevioletred;  
+}
+.show-groups .elemento[data-group="2"] {
+    background: orange; /* Alcalinotérreos */
+}
+.show-groups .elemento[data-group="3"] {
+    background: yellow;
+}
+.show-groups .elemento[data-group="4"] {
+    background: greenyellow;
+}
+/* ... y así hasta el grupo 18, más lantánidos y actínidos */
+.show-groups .elemento[data-group="5"] {
+    background: #f8ff00; /* Halógenos */
+}
+.show-groups .elemento[data-group="6"] {
+    background: mediumspringgreen; /* Gases nobles */
+}
+.show-groups .elemento[data-group="7"] {
+    background: purple;
+}
+.show-groups .elemento[data-group="8"] {
+    background: cyan;
+}
+.show-groups .elemento[data-group="9"] {
+    background: grey;
+}
+.show-groups .elemento[data-group="10"] {
+    background: silver;
+}
+.Grupos{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap:5px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.uz{
+    visibility: false;
+}
+.let{
+    font-size: 1.5rem;
+    display: block;
+}
+/*Modal ventana we*/
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal {
+  background: #020617;
+  width: 90%;
+  max-width: 520px;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: modalIn 0.3s ease;
+  position: relative;
+}
+
+/* Animación */
+@keyframes modalIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Cerrar */
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.symbol {
+  width: 70px;
+  height: 70px;
+  background: #38bdf8;
+  color: #022c22;
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+}
+
+.category {
+  font-size: 14px;
+  color: #7dd3fc;
+}
+
+/* Grid info */
+.modal-content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.info {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info span {
+  font-size: 12px;
+  color: white;
+}
+
+/* Descripción */
+.description {
+  margin-top: 18px;
+  font-size: 14px;
+  color: whitesmoke;
+  line-height: 1.4;
+}
+strong{
+    color:aqua
+}
+h2{
+    color: whitesmoke;
+}
